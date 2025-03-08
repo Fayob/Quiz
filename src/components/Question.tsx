@@ -29,6 +29,7 @@ const Question = ({
         ))}
       </div>
       <button
+        className="next-question"
         onClick={handleNextQuestion}
         disabled={!pickedAnswer}
       >

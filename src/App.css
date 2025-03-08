@@ -73,6 +73,14 @@ button:disabled {
   cursor: not-allowed;
 }
 
+.next-question {
+  margin-top: 20px;
+}
+
+.button-container {
+  text-align: center;
+}
+
 .score {
   margin-top: 20px;
 }

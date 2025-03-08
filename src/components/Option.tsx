@@ -10,13 +10,16 @@ type propType = {
 
 const Option = ({index, option, pickedAnswer, handleAnswerSelection}: propType) => {
   // const {handleAnswerSelection} = useQuiz(questions)
-  return <button
-      key={index}
-      onClick={() => handleAnswerSelection(option)}
-      className={pickedAnswer === option ? 'selected' : ''}
-    >
-      {option}
-    </button>
-}
+  return (
+    <div className="button-container">
+      <button
+        key={index}
+        onClick={() => handleAnswerSelection(option)}
+        className={pickedAnswer === option ? 'selected' : ''}
+      >
+        {option}
+      </button><br />
+    </div>
+  )}
 
 export default Option;
